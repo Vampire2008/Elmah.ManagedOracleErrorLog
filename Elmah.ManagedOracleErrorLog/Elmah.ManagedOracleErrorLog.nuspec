@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>Kain_Stropov</owners>
+    <licenseUrl>https://github.com/Vampire2008/Elmah.ManagedOracleErrorLog/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Vampire2008/Elmah.ManagedOracleErrorLog</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <summary>$description$</summary>
+    <tags>elmah error logging oracle managed</tags>
+    <dependencies>
+      <dependency id="elmah.corelibrary" version="[1.2.2,2.0.0)" />
+      <dependency id="Oracle.ManagedDataAccess" version="12.2.1100" />
+    </dependencies>
+  </metadata>
+</package>
