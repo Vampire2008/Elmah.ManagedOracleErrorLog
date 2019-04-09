@@ -116,7 +116,6 @@ namespace Elmah
 		public string SchemaOwner
 		{
 			get => _schemaOwner ?? string.Empty;
-
 			set
 			{
 				if (_schemaOwnerInitialized)
@@ -181,7 +180,7 @@ namespace Elmah
 					xmlLob.Write(tempbuff, 0, tempbuff.Length);
 					xmlLob.EndChunkWrite();
 
-					command.CommandText = "pkg_elmah$log_error.LogError";
+					command.CommandText = $"{SchemaOwner}pkg_elmah$log_error.LogError";
 					command.CommandType = CommandType.StoredProcedure;
 
 					parameters.Clear();
@@ -219,7 +218,7 @@ namespace Elmah
 			using (var connection = new OracleConnection(ConnectionString))
 			using (var command = connection.CreateCommand())
 			{
-				command.CommandText = "pkg_elmah$get_error.GetErrorsXml";
+				command.CommandText = $"{SchemaOwner}pkg_elmah$get_error.GetErrorsXml";
 				command.CommandType = CommandType.StoredProcedure;
 
 				var parameters = command.Parameters;
