@@ -293,7 +293,7 @@ namespace Elmah
 			using (var connection = new OracleConnection(ConnectionString))
 			using (var command = connection.CreateCommand())
 			{
-				command.CommandText = "pkg_elmah$get_error.GetErrorXml";
+				command.CommandText = $"{SchemaOwner}pkg_elmah$get_error.GetErrorXml";
 				command.CommandType = CommandType.StoredProcedure;
 
 				var parameters = command.Parameters;

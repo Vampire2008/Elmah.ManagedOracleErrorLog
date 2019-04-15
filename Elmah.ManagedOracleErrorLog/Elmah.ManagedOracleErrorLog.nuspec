@@ -6,7 +6,7 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>Kain_Stropov</owners>
-    <licenseUrl>https://github.com/Vampire2008/Elmah.ManagedOracleErrorLog/blob/master/LICENSE</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/Vampire2008/Elmah.ManagedOracleErrorLog</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
